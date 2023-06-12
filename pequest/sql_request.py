@@ -3,9 +3,9 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 from psycopg2 import Error
 
 
-con = psycopg2.connect(user="postgres",
-                       database='kambodb',
-                       password="momo1430",
+con = psycopg2.connect(user="user",
+                       database='db',
+                       password="password",
                        host="localhost",
                        port="5432")
 con.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)

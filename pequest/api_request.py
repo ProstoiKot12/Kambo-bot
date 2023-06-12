@@ -3,7 +3,7 @@ import requests
 async def api_film_found(message):
     url = 'https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword'
     headers = {
-        'X-API-KEY': '03867684-72dd-41f1-9301-508b8f8272c3'
+        'X-API-KEY': 'key'
     }
     params = {
         'keyword': message.text
@@ -43,7 +43,7 @@ async def api_film_found(message):
 async def api_film_id(message, title):
     url = 'https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword'
     headers = {
-        'X-API-KEY': '03867684-72dd-41f1-9301-508b8f8272c3'
+        'X-API-KEY': 'key'
     }
     params = {
         'keyword': title
@@ -62,7 +62,7 @@ async def api_film_id(message, title):
 async def api_film_about(film_id, message):
     url = f'https://kinopoiskapiunofficial.tech/api/v2.2/films/{film_id}'
     headers = {
-        'X-API-KEY': '03867684-72dd-41f1-9301-508b8f8272c3'
+        'X-API-KEY': 'key'
     }
 
     response = requests.get(url, headers=headers)
